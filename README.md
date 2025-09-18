@@ -18,7 +18,3 @@ Página web estática que cumpla con las buenas prácticas de **usabilidad, acce
 ## Consigna:
 
 Crear una **vista web estática** en HTML que represente un tema dado: **Space Girl**. La página debe incluir una estructura organizada de archivos, separando correctamente **HTML, CSS e imágenes**. Se espera el uso de **buenas prácticas de maquetado**, incluyendo HTML semántico.
-
-## Images
-
-![dwn1dv-jimenez-parcial-_1-SPACE-GIRLS](captura-tp.png "dwn1dv-jimenez-parcial-_1-SPACE-GIRLS")
