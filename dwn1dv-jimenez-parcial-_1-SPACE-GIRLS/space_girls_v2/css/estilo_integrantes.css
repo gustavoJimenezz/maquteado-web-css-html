@@ -1,0 +1,91 @@
+.integrantes h3 {
+    text-align: center;
+    padding: 10px 40px 5px 40px;
+    border-radius: 10px 10px 0px 0px;
+    margin: 0px;
+}
+
+.integrantes img {
+    margin: 8px auto auto 165px;
+    width: 50%;
+}
+
+
+/* Geri Halliwell */
+
+
+.recuadro_gh {
+    border-color: #d85e85;
+}
+
+.recuadro_gh h3 {
+    background-color: #dc678c;
+}
+
+.recuadro_gh span {
+    background-color: #d85e85;
+}
+
+
+/* Melanie Brown */
+
+
+.recuadro_mb {
+    border-color: #b3cf58;
+}
+
+.recuadro_mb h3 {
+    background-color: #b3cf58;
+}
+
+.recuadro_mb span {
+    background-color: #b3cf58;
+}
+
+
+/* Victoria Beckham */
+
+
+.recuadro_vb {
+    border-color: #ff1f1f;
+}
+
+.recuadro_vb h3 {
+    background-color: #ff1f1f;
+}
+
+.recuadro_vb span {
+    background-color: #ff1f1f;
+}
+
+
+/* Emma Bunton */
+
+
+.recuadro_eb {
+    border-color: #f6bfdb;
+}
+
+.recuadro_eb h3 {
+    background-color: #f6bfdb;
+}
+
+.recuadro_eb span {
+    background-color: #f6bfdb;
+}
+
+
+/* Melanie Chisholm */
+
+
+.recuadro_mc {
+    border-color: #ff643b;
+}
+
+.recuadro_mc h3 {
+    background-color: #ff643b;
+}
+
+.recuadro_mc span {
+    background-color: #ff643b;
+}

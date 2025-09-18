@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formularios + CSS</title>
+    <link rel="stylesheet" href="css/style_css.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <main>
+        <h1>Formularios + CSS</h1>
+
+        <div class="contenedor">
+            <form action="procesar_formulario.php" method="post" autocomplete="off">
+
+                <fieldset class="datos-personales">
+                    <legend>Datos Personales</legend>
+
+                    <label for="nombre">[type="text"] Nombre:</label>
+                    <input type="text" name="nombre" id="nombre" placeholder="Su nombre" class="w-50">
+
+                    <label for="pass">[type="password"] Password/Contraseña:</label>
+                    <input type="password" name="pass" id="pass" placeholder="Su contraseña" class="w-50">
+
+                    <label for="pass">[type="email"] e-Mail/Correo Electronico:</label>
+                    <input type="email" name="pass" id="pass" placeholder="Su direccion de e-Mail" class="w-100">
+                </fieldset>
+
+
+                <div class="dark-mode">
+
+                    <fieldset class="dark-fieldset">
+                        <legend>Modo Oscuro</legend>
+
+                        <div class="w-50">
+                            <label for="nacimiento">[type="date"] Fecha de nacimiento:</label>
+                            <input type="date" name="nacimiento" id="nacimiento" min="1980-01-01"
+                                max="2005-01-01" value="1987-09-10">
+
+                        </div>
+
+
+                        <div class="w-50">
+                            <label for="semana">¿Cuál es su semana de favorita?:</label>
+                            <input type="week" name="semana" id="semana" value="2022-W05">
+                        </div>
+                        <div class="w-50">
+
+                            <label for="mes">Mes de nacimiento:</label>
+                            <input type="month" name="mes" id="mes" min="1980-01" max="2005-01"
+                                value="1987-09">
+                        </div>
+                        <div class="w-50">
+                            <label for="hora">Hora de nacimiento:</label>
+                            <input type="time" name="hora" id="hora" value="23:47">
+                        </div>
+                        <div class="w-50">
+                            <label for="dia_hora">Dia y hora de nacimiento:</label>
+                            <input type="datetime-local" name="hora" id="hora" value="1987-09-10T23:47">
+                        </div>
+                        <div class="w-50">
+                            <label for="cantidad">¿Cuantas Mascotas tiene?:</label>
+                            <input type="number" name="cantidad" id="cantidad" min="1" max="5" value="1"
+                                step=".1">
+                        </div>
+                        <div class="w-50">
+
+                            <label for="color">Color favorito:</label>
+                            <input type="color" name="color" id="color" value="#6600ff">
+                        </div>
+                        <div class="w-100">
+                            <label for="archivo">Su foto:</label>
+                            <input type="file" name="archivo" id="archivo" accept=".jpg, .png">
+                        </div>
+
+                        <input type="hidden" name="escondido" id="escondido"
+                            value="este es un valor oculto">
+
+
+                    </fieldset>
+
+                </div>
+
+
+                <fieldset class="inline-fieldset">
+                    <legend>Preguntas importantes</legend>
+                    <div class="form_titulo">¿Cuál es la mejor Tortuga Ninja?</div>
+                    <input type="radio" id="leo" name="tortuga_favorita" value="Leonardo">
+                    <label for="leo">Leonardo</label><br>
+
+                    <input type="radio" id="donnie" name="tortuga_favorita" value="Donatello">
+                    <label for="donnie">Donatello</label><br>
+
+                    <input type="radio" id="mike" name="tortuga_favorita" value="Michelangelo">
+                    <label for="mike">Michelangelo</label><br>
+
+                    <input type="radio" id="raph" name="tortuga_favorita" value="Raphael">
+                    <label for="raph">Raphael</label>
+               
+        
+                    <div class="form_titulo">¿Cuáles miembros de los X-Men aceptarías en tu grupo de superhéroes?</div>
+
+                    <div>
+                        <input type="checkbox" id="wolverine" name="miembros_grupo" value="Wolverine">
+                        <label for="wolverine">Wolverine</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" id="jean_grey" name="miembros_grupo" value="Jean Grey">
+                        <label for="jean_grey">Jean Grey</label>
+                    </div>
+
+                    <div>
+                        <input type="checkbox" id="cyclops" name="miembros_grupo" value="Cyclops">
+                        <label for="cyclops">Cyclops</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" id="iceman" name="miembros_grupo" value="Iceman">
+                        <label for="iceman">Iceman</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" id="storm" name="miembros_grupo" value="Storm">
+                        <label for="storm">Storm</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" id="emma_frost" name="miembros_grupo" value="emma_frost">
+                        <label for="emma_frost">Emma Frost</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" id="gambit" name="miembros_grupo" value="Gambit">
+                        <label for="gambit">Gambit</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" id="rogue" name="miembros_grupo" value="Rogue">
+                        <label for="rogue">Rogue</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" id="angel" name="miembros_grupo" value="Angel">
+                        <label for="angel">Angel</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" id="beast" name="miembros_grupo" value="Beast">
+                        <label for="beast">Beast</label>
+                    </div>
+                </fieldset>
+
+                <h2>Textarea</h2>
+                <label for="vacaciones">¿Qué hiciste en tus vacaciones de verano?</label>
+                <textarea id="vacaciones" name="vacaciones" placeholder="Contanos en 200 caracteres o menos"
+                    maxlength="200"></textarea>
+
+                <h2>Select (y Option)</h2>
+                <label for="color_pr">Si fueras un Power Ranger ¿De qué color serias?:</label>
+                <select id="color_pr" name="color_pr">
+                    <option value="rojo">Rojo</option>
+                    <option value="azul">Azul</option>
+                    <option value="amarillo">Amarillo</option>
+                    <option value="verde">Verde</option>
+                    <option value="negro">Negro</option>
+                    <option value="blanco">Blanco</option>
+                    <option value="violeta">Violeta</option>
+                    <option value="naraja">Naranja</option>
+                </select>
+
+
+                <h2>Datalist</h2>
+                <label for="color_pr2">Si fueras un Power Ranger ¿De qué color serias?:</label>
+
+                <input type="text" list="color_pr2" name="color_pr2">
+                <datalist id="color_pr2" required>
+                    <option>Rojo</option>
+                    <option>Azul</option>
+                    <option>Amarillo</option>
+                    <option>Verde</option>
+                    <option>Negro</option>
+                    <option>Blanco</option>
+                    <option>Violeta</option>
+                    <option>Naranja</option>
+                </datalist>
+
+                <hr>
+                <input type="submit" value="Enviar" class="w-100">
+                <input type="reset" value="Reestablecer" class="w-100">
+            </form>
+
+        </div>
+
+    </main>
+
+</body>
+
+</html>

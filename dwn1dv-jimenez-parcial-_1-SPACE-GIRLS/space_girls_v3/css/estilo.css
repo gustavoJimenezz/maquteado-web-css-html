@@ -1,0 +1,81 @@
+body {
+    background-image: url("../imagenes/circles-ge04eb8cb0_1920.jpg");
+    font-family: 'Linux Libertine', 'Georgia', 'Times', serif;
+    font-size: 15px;
+    line-height: 25px;
+}
+
+header {
+    margin: 10px auto 10px auto;
+    max-width: 870px;
+}
+header img{
+    border-radius: 10px;
+}
+
+nav,
+section {
+    background-color: white;
+    max-width: 647px;
+    margin: 10px auto 10px auto;
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+    padding: 40px;
+    border-radius: 10px;
+}
+
+nav {
+    text-align: center;
+    padding: 10px 40px;
+}
+
+nav a {
+    display: inline-block;
+    background-color: #ff5959;
+    text-decoration: none;
+    color: black;
+    margin: auto 10px auto auto;
+    font-size: 10px;
+    max-width: 90px;
+    padding: 5px 10px;
+    border-radius: 10px;
+}
+
+nav a:hover {
+    color: white;
+    background-color: #ff8f8f;
+    text-align: center;
+}
+
+div {
+    border: #ff5959 3px solid;
+    border-radius: 10px;
+    margin: auto auto 30px auto;
+}
+
+h1,
+h2 {
+    text-align: center;
+    background-color: #ff5959;
+    border-radius: 10px;
+}
+
+
+p {
+    padding: 0px 20px 0px 20px;
+}
+
+strong {
+    color: #ff5959;
+    text-shadow: rgb(0 0 0 / 15%) 1px 0px 1px;
+}
+
+span {
+    display: block;
+    padding: 0px 20px 0px 20px;
+}
+
+.prefondo {
+    background-color: black;
+    border: #ff5959 4px solid;
+    max-width: 900px;
+}

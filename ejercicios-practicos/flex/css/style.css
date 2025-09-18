@@ -1,0 +1,155 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: rgb(226, 226, 226);
+    background: linear-gradient(180deg, rgb(236, 236, 236) 0%, rgb(186, 186, 186) 100%) fixed;
+    background-repeat: no-repeat;
+    font-family: 'Roboto', sans-serif;
+}
+
+main,
+header {
+    max-width: 1050px;
+    padding: 1.5rem 0.5rem;
+    margin: 2rem auto;
+    background-color: rgb(255, 255, 255);
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+
+}
+
+header {
+    padding: 0.5rem;
+}
+
+
+.banner {
+    background-image: url('../img/bg_banner.jpg');
+    aspect-ratio: 2/1;
+     background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center; /**/
+    padding: 20px;
+}
+
+.bannerBox {
+   background-color: rgba(255, 255, 255, 0.7);
+    width: 70%;
+    
+    border-radius: 10px; 
+    display: flex;
+    flex-direction: column;  /**/
+}
+
+h1 {
+     text-transform: uppercase;
+    text-align: center;
+    color: whitesmoke;
+    width: 70%;
+    margin: 30px auto;
+    font-size: 45px;
+    line-height: 55px;
+    color:rgb(214, 40, 127);
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.300); /**/
+}
+span {
+   text-align: center;
+    padding: 0.5em 0px 0.5em;
+    font-size: 1.2em;
+    text-transform: uppercase;
+    font-weight: bold;
+    letter-spacing: 5px;
+    background-color: rgb(169, 65, 155);
+    background: linear-gradient(rgb(222, 66, 201) 0%, rgb(141, 47, 129) 100%);
+
+    color: whitesmoke;
+    border-radius: 10px;
+    margin: 0px 10px 1rem;
+    box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.279);
+    overflow: hidden;
+    width:80%;
+
+    margin: auto auto 20px auto;   /**/
+}
+
+
+
+.flex-container {
+    /*CONTENEDOR FLEX*/
+    display: flex;
+    gap: 20px;
+   flex-direction: column;
+    padding: 10px;
+
+}
+
+.perfilPersonaje {
+    /* ITEMS FLEX  + CONTENEDOR FLEX*/
+    box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.279);
+    border-left: 5px solid hotpink;
+    border-right: 5px solid hotpink;
+    text-align: center;
+    border-radius: 10px;
+    background: linear-gradient(180deg, whitesmoke 50%, rgba(255, 105, 180, 0.081));
+    overflow: hidden;
+
+    display: flex;
+    gap: 10px;
+    align-items: flex-start;
+}
+
+.rangerPicContainer {
+    display: flex;
+    gap: 10px;
+    text-align: left;
+    padding: 10px;
+}
+
+.rangerPic {
+    border-radius: 10px;
+    border-top: 2px solid hotpink;
+    border-bottom: 2px solid hotpink;
+    padding: 0px 20px;
+    max-width: 150px;
+    box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.279);
+    background-color: white;
+    order: 2;
+}
+
+.rangerData {
+    margin-right: auto;
+}
+
+.rangerBio {
+
+    padding: 10px;
+    font-weight: 300;
+    font-size: 1.2rem;
+    text-align: left;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.300);
+    color: rgb(72, 72, 72);
+}
+
+.rangerBio p {
+    margin: 10px 0px 0px;
+}
+
+.rangerPicContainer h3 {
+    margin: 0px 0px 0.5rem;
+    color: rgb(214, 40, 127);
+    font-size: 2em;
+    border-bottom: 2px solid hotpink;
+    padding-right: 20px;
+    border-radius: 0px 0px 10px 0px;
+    font-size: 1.5rem;
+}
+
+.rangerPicContainer p {
+    margin: 0px;
+    color: rgb(244, 55, 149);
+    font-weight: 300;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.307);
+    font-size: 1.1em;
+}

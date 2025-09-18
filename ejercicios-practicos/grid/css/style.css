@@ -1,0 +1,142 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: rgb(226, 226, 226);
+    background: linear-gradient(180deg, rgb(236, 236, 236) 0%, rgb(186, 186, 186) 100%) fixed;
+    background-repeat: no-repeat;
+    font-family: 'Roboto', sans-serif;
+}
+
+main,
+header {
+    max-width: 1050px;
+    padding: 1.5rem 0.5rem;
+    margin: 2rem auto;
+    background-color: rgb(255, 255, 255);
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+
+}
+
+header {
+    padding: 0.5rem;
+}
+
+
+.banner {
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /**/
+    padding: 20px;
+}
+
+.bannerBox {
+    background-color: rgba(255, 255, 255, 0.7);
+    width: 70%;
+
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    /**/
+}
+
+.bannerBox>h1 {
+    text-transform: uppercase;
+    text-align: center;
+    color: whitesmoke;
+    width: 70%;
+    margin: 30px auto;
+    font-size: 45px;
+    line-height: 55px;
+    color: rgb(214, 40, 127);
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.300);
+    /**/
+}
+
+.bannerBox>span {
+    text-align: center;
+    padding: 0.5em 0px 0.5em;
+    font-size: 1.2em;
+    text-transform: uppercase;
+    font-weight: bold;
+    letter-spacing: 5px;
+    background-color: rgb(169, 65, 155);
+    background: linear-gradient(rgb(22, 22, 22) 0%, rgb(36, 36, 36) 100%);
+
+    color: whitesmoke;
+    border-radius: 10px;
+    margin: 0px 10px 1rem;
+    box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.279);
+    overflow: hidden;
+    width: 80%;
+
+    margin: auto;
+}
+
+
+
+.grid-container {
+    border: 1px solid black;
+    min-height: 500px;
+    margin: 40px auto;
+    padding: 5px;
+
+    display: grid;
+    gap: 5px;
+    grid-auto-flow: dense;
+
+    grid-template-columns: repeat(10, 1fr);
+
+}
+
+.grid-container>div {
+    background-color: pink;
+    text-align: center;
+    border-radius: 50%;
+}
+
+.grid-container>div>img {
+    width: 100%;
+    padding: 10px;
+}
+
+.cell-2-2{
+ grid-column: span 2;
+ grid-row: span 2;
+ background-color: #CF2C2C!important;
+}
+
+.cell-3-3{
+    grid-column: span 3;
+    grid-row: span 3;
+    background-color: #1986c6!important;
+   }
+
+.cell-red {
+    background-color: #CF2C2C;
+}
+
+.cell-green {
+    background-color: #019671;
+}
+
+.cell-pink {
+    background-color: #F0A5C3;
+}
+
+.cell-lilac {
+    background-color: #7D8DC8;
+}
+
+.cell-6-3 {
+    grid-column: span 6;
+    grid-row: span 3;
+}
+
+.cell-2-3 {
+    grid-column: span 2;
+    grid-row: span 3;
+}

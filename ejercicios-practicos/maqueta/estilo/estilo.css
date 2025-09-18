@@ -1,0 +1,59 @@
+/* Fondo gris claro, margen superior e inferior de 30px, margen lateral de 20px. */
+body {
+    background-color: #D3D3D3;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    margin-right: 20px;
+    margin-left: 20px;
+}
+
+/* Fondo celeste – verde, texto blanco, padding de 10px, margen inferior de 10px. */
+h1 {
+    background-color: lightblue;
+    color: white;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+/* Fondo rojo, padding de 10px, margen inferior de 10px. */
+nav {
+    background-color: red;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+/* Fondo blanco, padding de 20px, margen inferior de 10 px */
+main {
+    background-color: white;
+    padding: 20px;
+    margin-bottom: 10px;
+}
+
+/* Fondo negro, texto blanco. */
+footer {
+    background-color: black;
+    color: white;
+}
+
+/* Fondo de color (Un color distinto para cada sección), texto blanco, 
+padding de 10px, margen superior de 10px, lateral de 0px e inferior de 30px. */
+section {
+    color: white;
+    padding: 10px;
+    margin-top: 10px;
+    margin-bottom: 30px;
+    margin-right: 0px;
+    margin-left: 0px;
+}
+
+.primera-seccion {
+    background-color: #8B0000;
+}
+
+.segunda-seccion {
+    background-color: #B22222;
+}
+
+.tercera-seccion {
+    background-color: #DC143C;
+}

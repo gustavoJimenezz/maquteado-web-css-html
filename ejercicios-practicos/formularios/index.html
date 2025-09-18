@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formularios</title>
+    <link rel="stylesheet" href="css/style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <main>
+        <h1>Formularios</h1>
+
+        <div class="contenedor">
+
+            <form action="procesar_formulario.php" method="post" enctype="multipart/form-data">
+                <h2>Antes de empezar...</h2>
+                <p>Todos los campos de nuestro form, requieren obligatoriamente el atributo name. Este campo determina
+                    el nombre bajo el cual se guardarán sus datos y si no está declarado, el campo no va a enviar nada.
+                    Obviamente, no se pueden repetir.</p>
+                <p>Es buena práctica que todos los campos tengan el atributo id (ya vamos a ver porque) el atributo id
+                    puede ser igual al atributo name, para ahorrarnos confusión. Como ya sabemos, los atributos id son
+                    únicos y no se pueden repetir</p>
+                <p>La mayoría de los campos pueden llevar un atributo value, que define el valor del mismo. Este
+                    atributo
+                    tiene diferentes funciones y formatos dependiendo del campo.</p>
+                <p>En el caso de los botones, el valor del atributo value, será también su etiqueta</p>
+                <p>En todos los casos, se puede utilizar el atributo required para indicar que un campo es obligatorio
+                    (el formulario no se enviará si no se ingresó un dato válido)</p>
+                <hr>
+
+                <h2>Inputs (y Labels)</h2>
+                <p>En los casos que aplique, se puede usar el atributo placeholder para determinar un texto descriptivo
+                </p>
+                <p>En todos los casos, el valor puede predeterminarse utilizando el parámetro value (el formato de este
+                    valor varia de input en input)</p>
+                <p>Toda validación HTML puede ser manipulada. Es correcto utilizarla para mejorar la usabilidad, pero
+                    NUNCA como seguridad.</p>
+                <label for="nombre">[type="text"] Nombre:</label>
+                <input type="text" name="nombre" id="nombre" placeholder="Su nombre">
+                <hr>
+                <label for="pass">[type="password"] Password/Contraseña:</label>
+                <input type="password" name="pass" id="pass" placeholder="Su contraseña">
+                <p>El valor ingresado se oculta para el usuario</p>
+                <hr>
+                <label for="pass">[type="email"] e-Mail/Correo Electronico:</label>
+                <input type="email" name="email" id="email" placeholder="Su direccion de e-Mail">
+                <p>El valor se evaluará antes del envío y solo se enviara el formulario si el formato es correcto.</p>
+                <p>La apariencia (e idioma) del cartel emergente depende del browser</p>
+                <hr>
+                <label for="nacimiento">[type="date"] Fecha de nacimiento:</label>
+                <input type="date" name="nacimiento" id="nacimiento" min="1980-01-01" max="2005-01-01" value="1987-09-10">
+                <p>Su apariencia (y disponibilidad) depende del browser</p>
+                <p>En caso de tener que poner un value, siempre en formato: YYYY-MM-DD</p>
+                <p>Se pueden usar los atributos min y max para establecer un rango (Y este será validado antes de
+                    enviar.)</p>
+                <hr>
+                <label for="semana">[type="week"] ¿Cuál es su semana de favorita?:</label>
+                <input type="week" name="semana" id="semana" value="2022-W05">
+                <p>Este es raro</p>
+                <p>Su apariencia (y disponibilidad) depende del browser</p>
+                <p>En caso de tener que poner un value, siempre en formato: yyyy-Www</p>
+                <hr>
+
+                <label for="mes">[type="month"] Mes de nacimiento:</label>
+                <input type="month" name="mes" id="mes" min="1980-01" max="2005-01" value="1987-09">
+                <p>Su apariencia (y disponibilidad e idioma) depende del browser</p>
+                <p>En caso de tener que poner un value, siempre en formato: YYYY-MM</p>
+                <p>Se pueden usar los atributos min y max para establecer un rango (Y este será validado antes de
+                    enviar.)</p>
+                <hr>
+                <label for="hora">[type="time"] Hora de nacimiento:</label>
+                <input type="time" name="hora" id="hora" value="23:47">
+                <p>Su apariencia (y disponibilidad e idioma) depende del browser</p>
+                <p>En caso de tener que poner un value, siempre en formato: hh:mm</p>
+                <hr>
+
+                <label for="dia_hora">[type="datetime-local"] Dia y hora de nacimiento:</label>
+                <input type="datetime-local" name="dia_hora" id="dia_hora" value="1987-09-10T23:47">
+                <p>Su apariencia (y disponibilidad e idioma) depende del browser</p>
+                <p>En caso de tener que poner un value, siempre en formato: YYYY-MM-DDThh:mm</p>
+                <hr>
+
+                <label for="cantidad">[type="number"] ¿Cuantas Mascotas tiene?:</label>
+                <input type="number" name="cantidad" id="cantidad" min="1" max="5" step=".1">
+                <p>Su apariencia (y funcionalidad) depende del browser</p>
+                <p>Se pueden usar los atributos min y max para establecer un rango (Y este será validado antes de
+                    enviar.)</p>
+                <p>Se puedo utilizar el atributo step para determinar el incremento.</p>
+                <p>Adicionalmente, un valor decimal en el atributo step, habilitará el ingreso de números con decimales
+                </p>
+                <hr>
+                <label for="color">[type="color"] Color favorito:</label>
+                <input type="color" name="color" id="color" value="#6600ff">
+                <p>Su apariencia (y disponibilidad) depende del browser</p>
+                <p>En caso de tener que poner un value, siempre en formato Hex: #XXXXXX</p>
+                <hr>
+                <label for="escondido">[type="hidden"] Dato oculto:</label>
+                <input type="hidden" name="escondido" id="escondido" value="este es un valor oculto">
+                <p>No tendrá interacción con el usuario y su valor tiene que ser provisto a mano</p>
+                <hr>
+                <label for="archivo">[type="file"] Su foto:</label>
+                <input type="file" name="archivo" id="archivo" accept="image/*">
+                <p>El atributo accept determina que tipos de archivo se pueden subir. los valores válidos que se pueden
+                    pasar son:
+                    <span>Extensiones de archivo, siempre comenzando con un ".", como por ejemplo: <strong>.png</strong>
+                        o <strong>.jpg</strong></span>
+                    <span>Codigo <strong>MIME</strong> (Multipurpose Internet Mail Extensions), como por ejemplo
+                        <strong>image/png</strong> o <strong>video/mp4</strong></span>
+                    <span>Un comodín, que aceptara todos los archivos dentro de una categoría, como por ejemplo:
+                        <strong>image/*</strong>, <strong>audio/*</strong> o <strong>video/*</strong></span>
+                </p>
+                <p>Los textos (y el idioma de los mismos) dependen del browser</p>
+                <p>Este input únicamente funciona cuando nuestra form usa el método <strong>POST</strong> y requiere el
+                    siguiente parámetro declarada en el tag de la misma: enctype="multipart/form-data" </p>
+
+                <hr>
+
+                <div class="form_inline">
+                    <div class="form_titulo">¿Cuál es la mejor Tortuga Ninja?</div>
+                    <input type="radio" id="leo" name="tortuga_mejor" value="leo">
+                    <label for="leo">Leonardo</label><br>
+
+                    <input type="radio" id="donnie" name="tortuga_mejor" value="donnie" checked>
+                    <label for="donnie">Donatello</label><br>
+
+                    <input type="radio" id="mike" name="tortuga_mejor" value="mike">
+                    <label for="mike">Michelangelo</label><br>
+
+                    <input type="radio" id="raph" name="tortuga_mejor" value="raph">
+                    <label for="raph">Raphael</label>
+                </div>
+
+                <p>Si varios elementos comparten atributo name, son parte de un mismo grupo y por lo tanto solo se puede
+                    seleccionar una opción</p>
+                <p>Se puede usar el atributo checked para predeterminar si una casilla se encuentra seleccionada
+                    (Obviamente, solo una por grupo)</p>
+                <hr>
+
+                <div class="form_inline">
+                    <div class="form_titulo">¿Cuáles miembros de los X-Men aceptarías en tu grupo de superhéroes?</div>
+
+                    <div>
+                        <input type="checkbox" id="wolverine" name="miembros_grupo[]" value="Wolverine" checked>
+                        <label for="wolverine">Wolverine</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" id="jean_grey" name="miembros_grupo[]" value="Jean Grey">
+                        <label for="jean_grey">Jean Grey</label>
+                    </div>
+
+                    <div>
+                        <input type="checkbox" id="cyclops" name="miembros_grupo[]" value="Cyclops" checked>
+                        <label for="cyclops">Cyclops</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" id="iceman" name="miembros_grupo[]" value="Iceman" checked>
+                        <label for="iceman">Iceman</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" id="storm" name="miembros_grupo[]" value="Storm" checked>
+                        <label for="storm">Storm</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" id="emma_frost" name="miembros_grupo[]" value="emma_frost" checked>
+                        <label for="emma_frost">Emma Frost</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" id="gambit" name="miembros_grupo[]" value="Gambit" checked>
+                        <label for="gambit">Gambit</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" id="rogue" name="miembros_grupo[]" value="Rogue" checked>
+                        <label for="rogue">Rogue</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" id="angel" name="miembros_grupo[]" value="Angel" checked>
+                        <label for="angel">Angel</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" id="beast" name="miembros_grupo[]" value="Beast" checked>
+                        <label for="beast">Beast</label>
+                    </div>
+                </div>
+
+                <p>Si varios elementos comparten atributo name, se sobrescribirán y solo obtendremos el último
+                    seleccionado (y esto no nos sirve para nada)</p>
+                <p>Se le puede dar diferentes atributos name a cada checkbox y evaluarlos individualmente o...</p>
+                <p>Utilizar [ ] para agruparlos bajo un mismo nombre (Esta es la opción superior)</p>
+                <p>Se puede usar el atributo checked para predeterminar si una casilla se encuentra seleccionada.</p>
+
+                <hr>
+
+                <h2>Textarea</h2>
+                <label for="vacaciones">¿Qué hiciste en tus vacaciones de verano?</label>
+                <textarea id="vacaciones" name="vacaciones" placeholder="Contanos en 200 caracteres o menos" maxlength="200"></textarea>
+
+
+                <p>El tag va a pedir los atributos <strong>rows</strong> y <strong>cols</strong> para definir su tamaño,
+                    pero esto es arcaico y muy dificili de medir. Es mejor utilizar CSS para determinar el tamaño</p>
+                <p>También podemos usar CSS para deshabilitar la función de modificación de tamaño (resize: none;) (Pero
+                    esto no es recomendable a menos que sea absolutamente necesario)</p>
+                <p>Textarea acepta el atributo <strong>placeholder</strong>. También se puede escribir adentro, pero
+                    esto no es recomendable (ya que obliga a usuario a borrarlo)</p>
+                <p>Los atributos <strong>maxlength</strong> y <strong>minlength</strong> se pueden usar para determinar
+                    la cantidad de caracteres habilitados</p>
+                <hr>
+
+                <h2>Select (y Option)</h2>
+                <label for="color_pr">Si fueras un Power Ranger ¿De qué color serias?:</label>
+
+                <select id="color_pr" name="color_pr" required>
+                    <option value="" disabled selected>Elija su color predilecto</option>
+                    <option value="rojo">Rojo</option>
+                    <option value="azul">Azul</option>
+                    <option value="amarillo" >Amarillo</option>
+                    <option value="rosa">Rosa</option>
+                    <option value="verde">Verde</option>
+                    <option value="negro">Negro</option>
+                    <option value="blanco">Blanco</option>
+                    <option value="violeta" >Violeta</option>
+                    <option value="naraja">Naranja</option>
+                </select>
+
+
+                <p>Se puede usar el atributo selected para predeterminar si una opción se ecuentra seleccionada.</p>
+                <p>Se puede usar el atributo disabled para determinar si una opción se ecuentra deshabilitada.</p>
+                <p>Podemos utilizar una combinación de estos dos atributos, junto con un value vacío y el atributo
+                    required en el select, para simular un placeholder</p>
+                <p>Se puede usar el atributo multiple para habilitar al usuario a ingresar mas de un valor.</p>
+                <p>Una vez más, podemos agregar [ ] al atributo name para agrupar respuestas múltiples</p>
+                <hr>
+                <h2>Datalist</h2>
+                <label for="color_pr2">Si fueras un Power Ranger ¿De qué color serias?:</label>
+                <input type="text" list="color_pr2" name="color_pr2">
+                <datalist id="color_pr2" name="color_pr2" required>
+                    <option>Rojo</option>
+                    <option>Azul</option>
+                    <option>Amarillo</option>
+                    <option>Rosa</option>
+                    <option>Verde</option>
+                    <option>Negro</option>
+                    <option>Blanco</option>
+                    <option>Violeta</option>
+                    <option>Naranja</option>
+                </datalist>
+
+                <p>Datalist funciona como un input de texto, pero con sugerencias.</p>
+                <p>El usuario puede escribir y aceptar una sugerencia, simplemente entrar su propia respuesta.</p>
+                <hr>
+                <input type="submit" value="Enviar">
+                <input type="reset" value="Reestablecer">
+            </form>
+
+        </div>
+
+    </main>
+
+</body>
+
+</html>

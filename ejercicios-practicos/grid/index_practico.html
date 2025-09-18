@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Grid</title>
+    <link rel="stylesheet" href="css/style_final.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;500&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <div class="banner">
+            <div class="bannerBox">
+                <!-- -->
+                <img src="img/ssmb/logo.png" alt="Logo SSBU">
+                <span>GRID</span>
+            </div>
+        </div>
+    </header>
+    <main>
+
+        <div class="flex-container">
+            <div class="box-serie">
+                <div class="box-serieData">
+                    <h2>Super Mario Bros.</h2>
+                    <ol>
+                        <li>Mario</li>
+                        <li>Peach</li>
+                        <li>Yoshi</li>
+                        <li>Luigi</li>
+                        <li>Bowser</li>
+                        <li>Dr. Mario</li>
+                    </ol>
+                </div>
+
+                <div>
+                    <div class="grid-personajes">
+                        <div class="grid-cell cell-red cell-4-2">
+                            <div style="background-image: url('img/ssmb/mario.webp');"></div>
+                        </div>
+                        <div class="grid-cell cell-pink cell-2-4">
+                            <div class="fondoVertical" style="background-image: url('img/ssmb/peach.webp');"></div>
+                        </div>
+                        <div class="grid-cell cell-green cell-2-2">
+                            <div style="background-image: url('img/ssmb/luigi.webp');"></div>
+                        </div>
+                        <div class="grid-cell cell-lilac cell-2-2">
+                            <div style="background-image: url('img/ssmb/yoshi.webp');"></div>
+                        </div>
+                        <div class="grid-cell cell-orange cell-3-2">
+                            <div style="background-image: url('img/ssmb/bowser.webp');"></div>
+                        </div>
+                        <div class="grid-cell cell-blue cell-3-2">
+                            <div style="background-image: url('img/ssmb/drmario.png');"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="box-serie box-serie-r">
+                <div class="box-serieData">
+                    <h2>Kirby</h2>
+                    <ol>
+                        <li>Kirby</li>
+                        <li>Meta Knight</li>
+                    </ol>
+                </div>
+
+                <div>
+                    <div class="grid-personajes">
+                        <div class="grid-cell cell-pink cell-6-3">
+                            <div class="fondoHorizontal" style="background-image: url('img/ssmb/kirby.webp'); background-position-y: -40px;"></div>
+                        </div>
+                        <div class="grid-cell cell-blue cell-6-3">
+                            <div class="fondoHorizontal" style="background-image: url('img/ssmb/metaknight.png');"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="box-serie ">
+                <div class="box-serieData">
+                    <h2>Fire Emblem</h2>
+
+                    <ol>
+                        <li>Marth</li>
+                        <li>Lucina</li>
+                        <li>Chrom</li>
+                        <li>Roy</li>
+                        <li>Robin</li>
+                        <li>Byleth</li>
+                        <li>Corrin</li>
+                    </ol>
+                </div>
+
+                <div>
+                    <div class="grid-personajes">
+                        <div class="grid-cell cell-blue cell-3-2">
+                            <div style="background-image: url('img/ssmb/marth.webp');"></div>
+                        </div>
+                        <div class="grid-cell cell-orange cell-3-2">
+                            <div style="background-image: url('img/ssmb/lucina.webp');"></div>
+                        </div>
+                        <div class="grid-cell cell-blue cell-2-2">
+                            <div style="background-image: url('img/ssmb/chrom.webp');"></div>
+                        </div>
+                        <div class="grid-cell cell-red cell-2-2">
+                            <div style="background-image: url('img/ssmb/roy.webp');"></div>
+                        </div>
+                        <div class="grid-cell cell-lilac cell-2-2">
+                            <div style="background-image: url('img/ssmb/robin.webp');"></div>
+                        </div>
+                        <div class="grid-cell cell-lilac cell-3-2">
+                            <div style="background-image: url('img/ssmb/byleth.png');"></div>
+                        </div>
+                        <div class="grid-cell cell-orange cell-3-2">
+                            <div style="background-image: url('img/ssmb/corrin.png');"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="box-serie box-serie-r">
+                <div class="box-serieData">
+                    <h2>Xenoblade Chronicles</h2>
+                    <ol>
+                        <li>Shulk</li>
+                        <li>Pyra & Mythra</li>
+                    </ol>
+                </div>
+
+                <div>
+                    <div class="grid-personajes">
+                        <div class="grid-cell cell-red cell-3-6">
+                            <div  class="fondoVertical" style="background-image: url('img/ssmb/shulk.webp');"></div>
+                        </div>
+                        <div class="grid-cell cell-lilac cell-3-6">
+                            <div  class="fondoVertical" style="background-image: url('img/ssmb/pyra_mytrha.webp');"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="box-serie">
+                <div class="box-serieData">
+                    <h2>The Legend of Zelda</h2>
+                    <ol>
+                        <li>Link</li>
+                        <li>Young Link</li>
+                        <li>Toon Link</li>
+                        <li>Zelda</li>
+                        <li>Sheik</li>
+                        <li>Ganondorf</li>
+                    </ol>
+                </div>
+
+                <div>
+                    <div class="grid-personajes">
+                        <div class="grid-cell cell-green cell-2-3">
+                            <div class="fondoVertical"  style="background-image: url('img/ssmb/link.webp');"></div>
+                        </div>
+                        <div class="grid-cell cell-orange cell-2-3">
+                            <div class="fondoVertical" style="background-image: url('img/ssmb/ylink.png');"></div>
+                        </div>
+                        <div class="grid-cell cell-green cell-2-3">
+                            <div class="fondoVertical" style="background-image: url('img/ssmb/tlink.png');"></div>
+                        </div>
+                        <div class="grid-cell cell-lilac cell-2-3">
+                            <div class="fondoVertical" style="background-image: url('img/ssmb/zelda.webp');"></div>
+                        </div>
+                        <div class="grid-cell cell-blue cell-2-3">
+                            <div class="fondoVertical" style="background-image: url('img/ssmb/sheik.png');"></div>
+                        </div>
+                        <div class="grid-cell cell-red cell-2-3">
+                            <div class="fondoVertical" style="background-image: url('img/ssmb/ganondorf.png');"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+    </main>
+</body>
+
+</html>
